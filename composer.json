@@ -1,15 +1,15 @@
 {
-    "name": "project/undone-collaboration-page",
-    "description": "undone",
+    "name": "guozheng/tangshi",
+    "description": "tangshi",
     "authors": [
         {
-            "name": "Gin",
-            "email": "gin@gineign.com.cn"
+            "name": "guozheng",
+            "email": "2084759131@qq.com"
         }
     ],
     "autoload": {
         "psr-4": {
-
+            "Guozheng\\TangShi\\": "src"
         }
     },
     "minimum-stability": "dev",
