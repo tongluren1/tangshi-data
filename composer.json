@@ -1,0 +1,17 @@
+{
+    "name": "project/undone-collaboration-page",
+    "description": "undone",
+    "authors": [
+        {
+            "name": "Gin",
+            "email": "gin@gineign.com.cn"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
