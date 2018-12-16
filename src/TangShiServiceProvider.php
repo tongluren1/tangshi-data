@@ -24,9 +24,9 @@ class TangShierviceProvider extends ServiceProvider
      */
     public function boot()
     {
-//        $this->publishes([
-//            __DIR__.'/views' => base_path('resources/views/vendor/qmang'),
-//        ]);
+        $this->publishes([
+            __DIR__.'/../database/migrations/' => database_path('migrations')
+        ], 'migrations');
     }
 
     /**
@@ -34,12 +34,15 @@ class TangShierviceProvider extends ServiceProvider
      *
      * @return void
      */
-//    public function register()
-//    {
+    public function register()
+    {
 //        $this->app->singleton('tangshi', function($app) {
 //            return new TangShi($app['session'], $app['config']);
 //        });
-//    }
+        $this->commands([
+
+        ]);
+    }
 
     public function map()
     {
