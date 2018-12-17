@@ -7,15 +7,11 @@
  */
 namespace Guozheng\TangShi;
 
-use Illuminate\Support\ServiceProvider;
+use Illuminate\Support\Facades\Route;
+use Illuminate\Foundation\Support\Providers\RouteServiceProvider;
 
-class TangShierviceProvider extends ServiceProvider
+class TangShierviceProvider extends RouteServiceProvider
 {
-
-    /**
-     * @var bool
-     */
-    protected $defer = true;
 
     /**
      * Bootstrap services.
@@ -24,6 +20,7 @@ class TangShierviceProvider extends ServiceProvider
      */
     public function boot()
     {
+	parent::boot();
         $this->publishes([
             __DIR__.'/../database/migrations/' => database_path('migrations')
         ], 'migrations');
