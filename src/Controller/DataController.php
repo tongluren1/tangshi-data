@@ -31,7 +31,8 @@ class DataController extends \App\Http\Controllers\Controller
             }
             return Response('ok', 200);
         } catch (\Exception $e) {
-            echo 'error: ' . $e->getMessage();
+            // echo 'error: ' . $e->getMessage();
+            echo 'error: update table error!';// . $e->getMessage();
             exit();
         }
     }
