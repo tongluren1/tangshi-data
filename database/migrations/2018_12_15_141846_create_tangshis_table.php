@@ -19,7 +19,9 @@ class CreateTangshisTable extends Migration
             $table->string('detail_url', 200)->default('');
             $table->string('tag')->default('');
             $table->text('detail')->nullable();
+            $table->string('seo_url', 200);
             $table->timestamps();
+            $table->unique('seo_url');
         });
     }
 
