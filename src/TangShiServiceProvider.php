@@ -50,14 +50,14 @@ class TangShierviceProvider extends RouteServiceProvider
     protected function mapWebRoutes()
     {
         Route::middleware('web')
-            ->namespace('Guozheng\TangShi\Controllers')
+            ->namespace('Guozheng\TangShi\Controller\Web')
             ->group(realpath(__dir__ . '/../routes/web.php'));
     }
 
     protected function mapApiRoutes()
     {
         Route::middleware('api')
-            ->namespace('Guozheng\TangShi\Controllers\Api')
+            ->namespace('Guozheng\TangShi\Controller\Api')
             ->group(realpath(__dir__ . '/../routes/api.php'));
     }
 }

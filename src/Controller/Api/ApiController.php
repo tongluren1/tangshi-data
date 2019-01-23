@@ -6,9 +6,9 @@
  * Time: 下午5:33
  */
 
-namespace Guozheng\TangShi\Controllers\Api;
+namespace Guozheng\TangShi\Controller\Api;
 
-use App\Http\Controllers\Controller;
+use \App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class ApiController extends Controller

@@ -1,6 +1,6 @@
 <?php
 
-namespace Guozheng\TangShi\Controller;
+namespace Guozheng\TangShi\Controller\Web;
 
 use Guozheng\TangShi\Model\TangShi;
 use Illuminate\Support\Facades\DB;
