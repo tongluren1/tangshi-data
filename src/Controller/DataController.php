@@ -87,8 +87,8 @@ class DataController extends \App\Http\Controllers\Controller
         return $tangshiDetail[0][0];
     }
 
-    public function test()
-    {
-        return 111;
-    }
+//    public function test()
+//    {
+//        return 111;
+//    }
 }
