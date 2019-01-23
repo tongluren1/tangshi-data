@@ -20,10 +20,10 @@ class TangShierviceProvider extends RouteServiceProvider
      */
     public function boot()
     {
-	parent::boot();
-        $this->publishes([
-            __DIR__.'/../database/migrations/' => database_path('migrations')
-        ], 'migrations');
+        parent::boot();
+            $this->publishes([
+                __DIR__.'/../database/migrations/' => database_path('migrations')
+            ], 'migrations');
     }
 
     /**
@@ -44,12 +44,20 @@ class TangShierviceProvider extends RouteServiceProvider
     public function map()
     {
         $this->mapWebRoutes();
+        $this->mapApiRoutes();
     }
 
     protected function mapWebRoutes()
     {
-        Route::middleware('api', 'web')
+        Route::middleware('web')
             ->namespace('Guozheng\TangShi\Controllers')
             ->group(realpath(__dir__ . '/../routes/web.php'));
+    }
+
+    protected function mapApiRoutes()
+    {
+        Route::middleware('api')
+            ->namespace('Guozheng\TangShi\Controllers\Api')
+            ->group(realpath(__dir__ . '/../routes/api.php'));
     }
 }
